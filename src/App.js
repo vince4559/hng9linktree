@@ -22,7 +22,7 @@ function App() {
       </Box>
      <VStack spacing={4} mb={6}>
      <Image id="profile_img" src={profile} alt={'profile_img'} w={100} h={100} rounded={'full'} />
-      <Text fontWeight={'bold'} p={2} pb={5} fontSize={'xl'} fontFamily={'cursive'} >Vincent King's</Text>
+      <Text fontWeight={'bold'} p={2} pb={5} fontSize={'xl'} >Vincent King's</Text>
      </VStack>
       <Stack spacing={5} p={2}>
        <Button size={'lg'} id={'twitter'}>
