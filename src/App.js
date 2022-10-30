@@ -25,31 +25,35 @@ function App() {
       <Text fontWeight={'bold'} p={2} pb={5} fontSize={'xl'} >Vincent King's</Text>
      </VStack>
       <Stack spacing={5} p={2}>
-       <Button size={'lg'} id={'twitter'}>
-        <Link _hover={'none'} href={"https://twitter.com/DaVinci25419866"} isExternal>Twitter Link</Link>
-      </Button>
-        <Button size={'lg'} id={'btn__zuri'}>
-          <Link _hover={'none'} href={'https://training.zuri.team/'} isExternal>
-            Zuri Team</Link>
-        </Button>
-        <Button size={'lg'} id={'books'}>
-          <Link _hover={'none'} href={'https://books.zuri.team'} isExternal>
-            Zuri Books</Link>
-        </Button>
-        <Button size={'lg'} id={'book__python'}>
-          <Link _hover={'none'} href={"https://books.zuri.team/python/for/beginners?ref_id=<aigbojevincent>"} isExternal>Python Books</Link>
-          </Button>
-        <Button size={'lg'} id={'pitch'}>
-          <Link _hover={'none'} fontSize={'0.9em'} href={'https://books.zuri.team'} isExternal>
-            Background Checks For Coders</Link>
-        </Button>
-        <Button size={'lg'}>
-          <Link _hover={'none'} href={'https://books.zuri.team/design-rules'} isExternal>Design Books</Link>
-        </Button>
+      <Link _hover={'none'} id={'twitter'} href={"https://twitter.com/DaVinci25419866"} isExternal>
+      <Button size={'lg'} w='full'>Twitter Link</Button>
+      </Link>
+      <Link display={'none'} id={'slack'} href={'##'} >
+      <Button size={'lg'} w='full'>Aigboje Vincent</Button>
+      </Link>
+      <Link _hover={'none'} id={'btn__zuri'} href={'https://training.zuri.team/'}   isExternal>
+        <Button size={'lg'} w='full' > Zuri Team</Button>
+        </Link>
+        <Link _hover={'none'} id={'books'} href={'https://books.zuri.team'} isExternal>
+          <Button size={'lg'} w='full' >Zuri Books</Button>
+        </Link>
+        <Link _hover={'none'} id={'book__python'} href={"https://books.zuri.team/python/for/beginners?ref_id=<aigbojevincent>"} isExternal>
+          <Button size={'lg'} w='full'>Python Books</Button>
+        </Link>
+        <Link _hover={'none'} id={'pitch'} fontSize={'0.9em'} href={'https://books.zuri.team'} isExternal>
+          <Button size={'lg'} w='full' >Background Checks For Coders</Button>
+        </Link>
+        <Link _hover={'none'} id='book__design' href={'https://books.zuri.team/design-rules'} isExternal>
+          <Button size={'lg'} w='full'>Design Books</Button>
+        </Link>
       </Stack>
       <Stack spacing={6} pb={'4em'} direction={'row'} justifyContent={'center'}>
+        <Link href="##">
         <Image src={slack} alt={'slack_img'} boxSize={'6'}  rounded={'full'} />
+        </Link>
+        <Link href="##">
         <Image src={github} alt={'github_img'} boxSize={'6'} rounded={'full'} />
+        </Link>
       </Stack>
         <Stack direction={['column', 'column','row', 'row']} justifyContent={'space-between'} 
           borderTop={'solid 1px gray'} pt={'2em'}>
